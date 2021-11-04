@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes in Action: Send Your Hero Story</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;600&family=Source+Sans+Pro:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/sendstory.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="home.html">
+                    <img
+                        src="imgs/weblogo/weblogo.PNG"
+                        alt="logo"
+                    />
+                </a>
+                <div class="pagename">Heroes in Action</div>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="limelight.html">Limelight</a></li>
+                    <li><a href="dailyheroes.html">Daily Heroes</a></li>
+                    <li class="active"><a href="sendstory.html">Send Story</a></li>
+                    <li><a href="mission.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="storycont">
+            <form class="storycont-in">
+                <div class="story-header">
+                    <h2>Send Your Hero Story</h2>
+                </div>
+                <div class="section-box sender-info">
+                    <h3>Sender Information</h3>
+                    <div class="partner-labelfield">
+                        <div class="field-row field-row-label">
+                            <label for="sender-name">Complete Name</label>
+                        </div>
+                        <div class="field-row field-row-entry">
+                            <input type="text" id="sender-name" name="sender-name" required>
+                        </div>
+                    </div>
+                    <div class="partner-labelfield">
+                        <div class="field-row field-row-label">
+                            <label for="sender-email">Email Address</label>
+                        </div>
+                        <div class="field-row field-row-entry">
+                            <input type="email" id="sender-email" name="sender-email" required>
+                        </div>
+                    </div>
+                    <div class="partner-labelfield">
+                        <div class="field-row field-row-label">
+                            <label for="sender-number">Contact Number</label>
+                        </div>
+                        <div class="field-row field-row-entry">
+                            <input type="tel" id="sender-number" name="sender-number" placeholder="Sample format: 09123456789" pattern="[0-9]{11}" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-box hero-info">
+                    <h3>Hero Information</h3>
+                    <div class="partner-labelfield">
+                        <div class="field-row field-row-label">
+                            <label for="hero-name">Name</label>
+                        </div>
+                        <div class="field-row field-row-entry">
+                            <input type="text" id="hero-name" name="hero-name" required>
+                        </div>
+                    </div>
+                    <div class="partner-labelfield">
+                        <div class="field-row field-row-label long-field-label-box">
+                            <label for="hero-story" class="long-field-label">Hero Story</label>
+                        </div>
+                        <div class="field-row field-row-entry">
+                            <textarea id="hero-story" name="hero-story" rows="5" placeholder="How did s/he/they inpired you?" required></textarea>
+                        </div>
+                    </div>
+                    <div class="partner-labelfield">
+                        <div class="field-row field-row-label">
+                            <label for="hero-pic">Picture</label>
+                        </div>
+                        <div class="field-row field-row-entry">
+                            <input type="file" id="hero-pic" name="hero-pic" accept="image/png, image/jpeg" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-box agreement">
+                    <input type="checkbox" id="agree-field" name="agree-field" required>
+                    <label for="agree-field">
+                        I agree to the <a href="https:\\google.com">Terms and Conditions</a> of this website.
+                    </label>
+                </div>
+                <div class="section-box button-section">
+                    <button class="send-button">Send this story!</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-text">
+            <h2>Heroes in Action</h2>
+            Catching Stories. Moving Lives.
+        </div>
+        <div class="footer-logos">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img
+                    src="imgs/footer/facebook.png"
+                    alt="facebook"
+                />
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img
+                    src="imgs/footer/twitter.png"
+                    alt="twitter"
+                />
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img
+                    src="imgs/footer/instagram.png"
+                    alt="instagram"
+                />
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <img
+                    src="imgs/footer/youtube.png"
+                    alt="youtube"
+                />
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img
+                    src="imgs/footer/linkedin.png"
+                    alt="linkedin"
+                />
+            </a>
+        </div><br>
+        <p>
+            This website is developed for educational purposes only.
+        </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

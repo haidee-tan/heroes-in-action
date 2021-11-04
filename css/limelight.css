@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  background-color: rgb(208, 219, 223);
+}
+
+main {
+  margin: 0 auto;
+  padding: 3%;
+  padding-top: 7rem;
+  width: 90vw;
+  background-color: rgb(255, 255, 255);
+}
+
+.img-holder,
+.img-limelight {
+  width: 100%;
+  height: 60vw;
+  object-fit: cover;
+  position: absolute;
+}
+
+.headline {
+  position: relative;
+}
+
+.headline-text .section-name {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2vw;
+  border-bottom: 1px solid white;
+  margin-bottom: 1%;
+  background-color: rgb(28, 28, 28);
+}
+
+.headline-text {
+  background-color: rgb(133, 24, 42);
+  border-right: 2vw solid rgb(255, 255, 255);
+  padding: 3%;
+  margin-top: 5%;
+  width: 33vw;
+  position: absolute;
+}
+
+.headline-text h2 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 4vw;
+  line-height: 160%;
+  text-align: center;
+  color: white;
+  margin-top: 5%;
+}
+
+.gold {
+  color: rgb(255, 255, 255);
+  font-size: 9vw;
+  font-weight: 700;
+}
+
+#limelight .content {
+  padding-top: 63vw;
+  font-size: 12px;
+}
+
+.content > p {
+  font-weight: 400;
+  margin-bottom: 4%;
+}
+
+.content .panel-heading {
+  background-color: rgb(208, 219, 223);
+  padding: 3% 3% 3% 3%;
+  border: 1px solid white;
+  color: white;
+}
+
+.content .panel {
+  border: 1px solid white;
+  color: white;
+}
+
+.panel-title a {
+  color: rgb(58, 58, 58);
+  font-weight: 700;
+}
+
+.panel-heading h4 {
+  font-size: 12px;
+}
+
+.panel-body {
+  color: rgb(28, 28, 28);
+  background-color: rgb(242, 242, 242);
+  padding: 2% 5%;
+}
+
+.accordion-img {
+  width: 100%;
+  height: 100vw;
+  margin-bottom: 3%;
+  object-fit: cover;
+}
+
+.accordion-img-landscape {
+  width: 100%;
+  height: 55vw;
+  margin-bottom: 3%;
+  object-fit: cover;
+}
+
+#accordion p {
+  padding-top: 2%;
+  /* overflow: hidden; */
+}
+
+.sources {
+  margin-top: 1%;
+  font-size: 10px;
+}
+
+ul {
+  margin-bottom: 1%;
+}
+
+.sources li {
+  margin-left: 5%;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  main {
+    width: 80vw;
+    font-weight: 400;
+  }
+
+  .headline {
+    margin: 0;
+    height: 30vw;
+    display: flex;
+    flex-wrap: row wrap;
+    align-items: center;
+  }
+
+  .headline-text {
+    order: 1;
+    align-self: stretch;
+    position: relative;
+    margin-top: 0;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img-holder {
+    order: 2;
+  }
+
+  .headline-text h2 {
+    margin: 0;
+    padding-bottom: 3%;
+    border-bottom: 0.5vw solid white;
+    font-size: 3vw;
+  }
+
+  .gold {
+    font-size: 6vw;
+  }
+
+  .img-holder,
+  .img-limelight {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+    position: relative;
+  }
+
+  #limelight .content {
+    padding-top: 5%;
+    font-size: 14px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .panel-group {
+    width: 100vw;
+  }
+
+  .panel-heading h4 {
+    font-size: 18px;
+  }
+
+  .content .panel-heading {
+    padding: 2%;
+  }
+
+  .accordion-img {
+    height: 50vw;
+  }
+
+  .accordion-img-landscape {
+    height: 40vw;
+  }
+
+  .sources {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  main {
+    width: 70vw;
+    font-weight: 400;
+  }
+
+  .headline {
+    margin: 0;
+    height: 30vw;
+    display: flex;
+    flex-wrap: row wrap;
+    align-items: center;
+  }
+
+  .headline-text {
+    order: 1;
+    align-self: stretch;
+    position: relative;
+    margin-top: 0;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img-holder {
+    order: 2;
+  }
+
+  .headline-text h2 {
+    font-size: 2.5vw;
+    margin: 0;
+    padding-bottom: 3%;
+    border-bottom: 0.5vw solid white;
+  }
+
+  .gold {
+    font-size: 6vw;
+  }
+
+  .img-holder,
+  .img-limelight {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+    position: relative;
+  }
+
+  #limelight .content {
+    padding-top: 2%;
+    font-size: 16px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .panel-group {
+    width: 100vw;
+  }
+
+  .panel-heading h4 {
+    font-size: 20px;
+  }
+
+  .content .panel-heading {
+    padding: 2%;
+  }
+
+  .accordion-img {
+    width: 25vw;
+    height: 25vw;
+    margin: 2% 3% 2% 0;
+    float: left;
+  }
+
+  .accordion-img-landscape {
+    width: 25vw;
+    height: 20vw;
+    margin: 3% 3% 2% 0;
+    float: left;
+    clear: left;
+  }
+
+  .sources {
+    font-size: 14px;
+  }
+}

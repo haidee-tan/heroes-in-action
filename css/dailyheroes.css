@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: rgb(208, 219, 223);
+  color: rgb(58, 58, 58);
+}
+
+main {
+  margin: 0 auto;
+  padding: 3%;
+  padding-top: 7rem;
+  width: 90vw;
+  background-color: rgb(255, 255, 255);
+}
+
+main h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+main .section-name {
+  background-color: rgb(58, 58, 58);
+  padding: 1vw;
+  margin-bottom: 1rem;
+}
+
+.box-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.boxes,
+.boxes-landscape {
+  padding: 3%;
+  width: 100%;
+}
+
+.boxes-in {
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgb(208, 219, 223);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+
+.boxes-in .portrait {
+  height: 60vw;
+  width: 100%;
+  object-fit: cover;
+}
+
+.boxes-in .landscape {
+  height: 45vw;
+  width: 100%;
+  object-fit: cover;
+}
+
+.box-caption {
+  margin: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: stretch;
+  margin-bottom: 0;
+}
+
+.landscape-img-cont {
+  height: 45vw;
+}
+
+.box-caption h4 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto Slab', serif;
+  color: rgb(187, 34, 34);
+}
+
+.boxes-in a {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  background-color: rgb(208, 219, 223);
+  font-size: 14px;
+  text-align: center;
+  align-self: flex-end;
+  margin: auto 1.5rem 1.5rem 0;
+}
+
+.boxes-landscape a {
+  margin-right: 0;
+}
+
+.for-transition {
+  position: relative;
+}
+
+.for-transition img {
+  position: absolute;
+  left: 0;
+}
+
+@keyframes fadeinfadeout {
+  0% {
+    opacity: 1;
+  }
+
+  17% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  92% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.for-transition img:nth-of-type(1) {
+  animation-delay: 6s;
+}
+
+.for-transition img:nth-of-type(2) {
+  animation-delay: 4s;
+}
+
+.for-transition img:nth-of-type(3) {
+  animation-delay: 2s;
+}
+
+.for-transition img:nth-of-type(4) {
+  animation-delay: 0;
+}
+
+.for-transition img {
+  animation-name: fadeinfadeout;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  /* animation-direction: alternate; */
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  main {
+    width: 80vw;
+    font-size: 14px;
+  }
+
+  main h2 {
+    font-size: 24px;
+  }
+
+  main h4 {
+    font-size: 20px;
+  }
+
+  .boxes {
+    width: calc(100% / 3);
+    padding: 1%;
+  }
+
+  .boxes-landscape {
+    width: 100%;
+    padding: 1%;
+  }
+
+  .boxes-in .portrait {
+    height: 20vw;
+  }
+
+  .boxes-in .landscape {
+    height: 30vw;
+  }
+
+  .landscape-img-cont {
+    height: 30vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  main {
+    width: 70vw;
+    font-size: 14px;
+  }
+
+  main h2 {
+    font-size: 28px;
+  }
+
+  main h4 {
+    font-size: 24px;
+  }
+
+  .boxes {
+    width: calc(100% / 3);
+    padding: 1%;
+  }
+
+  .boxes-landscape .boxes-in {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .boxes-in .portrait {
+    height: 20vw;
+  }
+
+  .boxes-landscape {
+    width: 100;
+    padding: 1%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .landscape-img-cont {
+    height: 25vw;
+    width: 60%;
+    object-fit: cover;
+  }
+
+  .boxes-in .landscape {
+    height: 25vw;
+    width: 100%;
+  }
+
+  .boxes-landscape .box-caption {
+    width: 40%;
+    margin: 0;
+    padding: 2rem;
+  }
+
+  .boxes-landscape a {
+    margin-bottom: 0;
+  }
+
+  .landscape2 .box-caption {
+    order: -1;
+  }
+}
